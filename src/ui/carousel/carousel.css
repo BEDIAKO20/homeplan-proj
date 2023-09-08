@@ -1,0 +1,11 @@
+.home-plan{
+width: 90%;
+border-radius: 20px;
+border-top-left-radius: 20px !important;
+border-top-right-radius: 20px !important;
+}
+.image-box{
+    border-radius: 20px;  
+    border-top-left-radius: 20px !important;
+border-top-right-radius: 20px !important;
+}
