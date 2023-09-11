@@ -12,6 +12,7 @@ import 'swiper/css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import CardSearch from '../CardSearch/CardSearch';
 
 
 function Carousel() {
@@ -62,6 +63,7 @@ function Carousel() {
         <img src={houseplan} alt='houseplanImage' className='img-fluid home-plan' />
         </SwiperSlide>
       </Swiper>
+      <CardSearch/>
         </div>
     )
 }
