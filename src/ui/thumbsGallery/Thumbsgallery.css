@@ -1,0 +1,11 @@
+.flex_row{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+.thumbgallery{
+    padding-left: 40px !important;
+}
+.thumbgimage{
+    border: 1px solid yellow;
+}

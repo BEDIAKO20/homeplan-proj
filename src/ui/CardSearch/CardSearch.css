@@ -5,9 +5,28 @@
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 } */
 .Box-Card{
-   border: none !important;
+   border: 2px solid white;
    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-   border-radius: 20px !important;
-   position: static !important;
-   bottom: 20px !important;
+   border-radius: 10px !important;
+   margin-top: 29px !important;
+}
+.choose-plans{
+   background-color: #454545 !important ;
+   color:#FFF4E0 !important ;
+   font-family: Poppins;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.6px;
+gap: 1%;
+}
+.choose-text{
+   gap: 3;
+   font-family: Poppins;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 50px;
+   letter-spacing: 0.6px;
 }
