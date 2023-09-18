@@ -1,43 +1,54 @@
-import React ,{useState}from 'react'
-import "../thumbsGallery/Thumbsgallery.css"
-import   homePlans from "../../assets/houseplan3.jpg"
-import homePlans2 from "../../assets/houseplan4.jpg"
-import homePlans3 from "../../assets/houseplan5.jpg"
-import homePlans4 from "../../assets/houseplan6.jpg"
+import React, { useState } from "react";
+import "../thumbsGallery/Thumbsgallery.css";
+import homePlans from "../../assets/houseplan3.jpg";
+import homePlans2 from "../../assets/houseplan4.jpg";
+import homePlans3 from "../../assets/houseplan5.jpg";
+import homePlans4 from "../../assets/houseplan6.jpg";
+import homePlans5 from "../../assets/houseplan7.jpg";
+
+import {BsFillArrowRightSquareFill, BsFillArrowLeftSquareFill} from  "react-icons/bs"
 
 function Thumbsgallerys() {
+  const image = [
+    { id: 0, value: homePlans },
+    { id: 1, value: homePlans4 },
+    { id: 2, value: homePlans3 },
+    { id: 3, value: homePlans2 },
+    { id: 4, value: homePlans4 },
+    { id: 5, value: homePlans3 },
+    { id: 6, value: homePlans5 },
+  ];
+  const [sliderData, setSliderData] = useState(image[0]);
+  const [val, setVal] =useState(0)
 
-  const image=[
-    {id:0, value:homePlans},
-    {id:1, value:homePlans4},
-    {id:2, value:homePlans3},
-    {id:3, value:homePlans2},
-  ]
-  const [sliderData,setSliderData]=useState(image[0])
-
-  const handleClick =(index)=>{
+  const handleClick = (index) => {
     console.log(index);
-    const slider =image[index];
+    setVal(index)
+    const slider = image[index];
     setSliderData(slider);
-  }
-  
-  return (
-    <div> 
-      <img src={sliderData.value} height="300" width="500"/>
-      <div className='flex_row'>
+  };
 
-      
-      {
-        image.map((data,i) =>
-        <div className='thumbgallery'>
- <img key={data.id} src={data.value} onClick={()=>handleClick(i)} height="70" width="100" className='thumbgimage' />
-        </div>
-       
-        )
-      }
+  return (
+    <div className="mt-5">
+   <div className="inThumbgallery">
+      <img src={sliderData.value} height="500" width="800"  className="imageData" />
+   </div>
+      <div className="flex_row">
+        {image.map((data, i) => (
+          <div className="thumbgallery"key={i}>
+            <img
+              
+              src={data.value}
+              onClick={() => handleClick(i)}
+              height="70"
+              width="100"
+              className={sliderData.id == i ? "thumbgimage" : ""}
+            />
+          </div>
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Thumbsgallerys
+export default Thumbsgallerys;

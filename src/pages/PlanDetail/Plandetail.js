@@ -1,26 +1,25 @@
 import React from "react";
 import Thumbsgallery from "../../ui/thumbsGallery/Thumbsgallery";
+import Desription from "../../ui/PlansDetaideDesription/Desription";
+import Paymentfile from "../../ui/PaymentFile/Paymentfile";
 
 
 
 function Plandetail() {
- const thumbnailImage=[
-    '../assets/houseplans1.jpg',
-    '../../assets/houseplans1.jpg',
-    '../../assets/houseplans1.jpg',
-    '../../assets/houseplans1.jpg',
-    '../../assets/houseplans1.jpg',
-    '../../assets/houseplans1.jpg',
- ]
 
   return (
     <>
       <div className="container">
         <div className="row">
+          <div className="col-md-6">
+           
+                <Thumbsgallery/>
+                <Desription/>
+              </div>
+            
           <div className="col-md-6 col-12">
-            <Thumbsgallery images={thumbnailImage}/>
+          <Paymentfile/>
           </div>
-          <div className="col-md-6 col-12"></div>
         </div>
       </div>
     </>
