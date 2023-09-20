@@ -4,6 +4,7 @@ import Home from "../pages/home/Home"
 import Homeplans from '../pages/homePlans/Homeplans'
 import Header from '../components/header/Header'
 import Plandetail from '../pages/PlanDetail/Plandetail'
+import Footer from '../components/footer/Footer'
 function Routers() {
   return (
     <div>
@@ -13,10 +14,11 @@ function Routers() {
             <Route path='/' element={<Navigate to ="/home"/>}/>
             <Route path="/home" element={<Home/>}/>
             <Route path="/homeplan" element={<Homeplans/>}/>
-            <Route  path="/plandetail"  element={<Plandetail/>}/>
+            <Route  path="/plandetail/:params"  element={<Plandetail/>}/>
             <Route/>
             <Route/>
         </Routes>
+        <Footer/>
         </BrowserRouter>
     </div>
   )
