@@ -78,8 +78,13 @@
     background-color: #EC994B;
     color: aliceblue;
     border: none;
+    font-weight: 20px !;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none !important;
+  }
+  .linktext {
+    text-decoration: none !important;
   }

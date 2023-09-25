@@ -1,5 +1,13 @@
 import React from 'react'
  import '../PaymentFile/Payment.css'
+  import { NavLink } from 'react-router-dom';
+
+
+
+
+
+
+
 function Paymentfile() {
     const  cardBox = {
        width:'80%'
@@ -46,7 +54,10 @@ function Paymentfile() {
     <div className='printing'>
 
     </div>
-<button className='buy-btn p-3 mt-4  ms-5' height="30%">BUY</button>
+    <NavLink className="linktext "to="/payment">
+    <button className='buy-btn p-3 mt-4  ms-5 rounded-2 ' height="30%">BUY</button>
+    </NavLink>
+
   </div>
 </div>      
 </div>

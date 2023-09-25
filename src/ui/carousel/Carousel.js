@@ -68,7 +68,7 @@ function Carousel() {
         <img src={houseplan} alt='houseplanImage' className='img-fluid home-plan' />
         </SwiperSlide>
       </Swiper>
-      <CardSearch/>
+      {/* <CardSearch/> */}
         </div>
     )
 }
