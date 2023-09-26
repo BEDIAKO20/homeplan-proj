@@ -21,15 +21,18 @@
     line-height: 20%;
 }
 .navbar-brand{
-    color: rgba(0, 0, 0, 0.50);
+    color: rgba(238, 238, 238, 0.918) !important;
     font-family: 'Dancing Script', cursive;
     font-size: 27px;
     font-style: normal;
     font-weight: 900;
     line-height: 20%;
 }
+.navbar {
+    background: #263238 !important;
+}
 .icon{
-    color: rgba(0, 0, 0, 0.50);
+    color: rgba(238, 238, 238, 0.918) !important;
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
     font-style: normal;

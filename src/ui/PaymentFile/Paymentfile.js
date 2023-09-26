@@ -21,7 +21,7 @@ function Paymentfile() {
     <div>
           <div className="card-box ms-5 mt-5" >
             <div class="card" style={cardBox}>
-  <h5 class="card-header text-center"> <span className='numbar-span'>$50</span>   $100</h5>
+  <h5 class="card-header text-center"> <span className='numbar-span'>$50</span> $100</h5>
   <div class="card-body">
     <h5 class="card-title">Extra</h5>
     <p class="card-text">Please click the question Mark Icon to see the details of each extra</p>

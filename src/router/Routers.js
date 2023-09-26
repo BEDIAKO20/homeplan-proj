@@ -6,6 +6,7 @@ import Header from '../components/header/Header'
 import Plandetail from '../pages/PlanDetail/Plandetail'
 import Footer from '../components/footer/Footer'
 import Payment from '../pages/payment/Payment'
+import Download from '../pages/download/Download'
 function Routers() {
   return (
     <div>
@@ -17,7 +18,7 @@ function Routers() {
             <Route path="/homeplan" element={<Homeplans/>}/>
             <Route  path="/plandetail/:params"  element={<Plandetail/>}/>
             <Route path="payment" element={<Payment/>}/>
-            <Route/>
+            <Route path="/download" element={<Download/>}/>
             <Route/>
         </Routes>
         <Footer/>

@@ -1,30 +1,44 @@
 import React,{useState}from "react";
 import "../payment/payment.css";
-// import { PaystackProps } from 'react-paystack/dist/types'
-// import { PaystackProps } from 'react-paystack/dist/types'
-import { PaystackButton } from "react-paystack";
+import PaystackPop from '@paystack/inline-js'; 
+import { useNavigate } from "react-router-dom";
 
 function Payment() {
-  const publicKey = "pk_test_b9c7772fd0ba7145f2ab4ddf492fbca56c73fc02"
-  const [amount,setAmount  ]=useState("")
+
+//   const [amount,setAmount  ]=useState("")
+const amount =1000*100
   const [email, setEmail] = useState("")
   const [firstname, setFirstname] = useState("")
   const [lastname, setLastname] = useState("")
 
-  
-  const componentProps = {
-    email,
-    amount,
-    metadata: {
-      firstname,
-      lastname,
-    },
-    publicKey,
-    text: "Pay Now",
-    onSuccess: () =>
-      alert("Thanks for doing business with us! Come back soon!!"),
-    onClose: () => alert("Wait! Don't leave :()"),
-  }
+
+const navigate=useNavigate();
+
+  const Paywithpaystack =(e)=>{
+	e.preventDefault()
+
+		const paystack = new PaystackPop()
+		
+		paystack.newTransaction({
+			key:"pk_test_b9c7772fd0ba7145f2ab4ddf492fbca56c73fc02",
+			amount:amount,
+			email,
+			firstname,
+			lastname,
+			callback: function (response) {
+				if (response.status === "success") {
+				  // Payment was successful
+				  console.log(response); // You can handle the response here
+		
+				  // Redirect to the success page
+				  navigate("/download"); // Use navigate to change the route
+				} else {
+				  // Payment was not successful
+				  window.alert("Payment not successful. Please try again."); // Display an alert
+				}
+			  },
+		})
+  	}
   return (
     <div>
       <div className="container-fluid">
@@ -128,9 +142,11 @@ function Payment() {
                         name="holdername"
                         id="email-address"
                         placeholder="JohnSmith@gmail.com"
+						value={email}
 						onChange={(e) => setEmail(e.target.value)}
                       />
-                      <div class="row">
+					    <p>{amount}</p>
+                      {/* <div class="row">
                         <div class="col-md-12">
                           <label class="pay">Amount</label>
                         </div>
@@ -142,10 +158,11 @@ function Payment() {
                             placeholder="0000-0000-0000-0000"
                             minlength="5"
                             maxlength="5"
+							value={amount}
 							onChange={(e) => setAmount(e.target.value)}
                           />
                         </div>
-                      </div>
+                      </div> */}
                       <div class="row">
                         <div class="col-8 col-md-6">
                           <label class="pay">First Name</label>
@@ -154,6 +171,7 @@ function Payment() {
                             name="name"
                             id="firstname"
                             placeholder="First Name"
+							value={firstname}
 							onChange={(e) => setFirstname(e.target.value)}
                           />
                         </div>
@@ -164,6 +182,7 @@ function Payment() {
                             name="name"
                             id="last-name"
                             placeholder="Last Name"
+							value={lastname}
 							onChange={(e) => setLastname(e.target.value)}
                           />
                         </div>
@@ -171,13 +190,14 @@ function Payment() {
 
                       <div class="row">
                         <div class="col-md-6">
-						<PaystackButton {...componentProps}  class="btn btn-info placeicon" />  
-                          {/* <input
+						{/* <PaystackButton {...componentProps}  class="btn btn-info placeicon" />   */}
+                          <input
                             type="submit"
                             value="MAKE A PAYMENT &nbsp; &#xf178;"
                             class="btn btn-info placeicon"
-							{...componentProps} 
-                          /> */}
+						onClick={ Paywithpaystack}
+							
+                          />
                         </div>
                       </div>
                     </div>

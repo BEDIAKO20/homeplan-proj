@@ -10,7 +10,7 @@ import {FaRegBell} from 'react-icons/fa'
 export default function Header() {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand g-3" href="#"><SiHomebridge className='brand-icon'/> Manaspce Constructions</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
