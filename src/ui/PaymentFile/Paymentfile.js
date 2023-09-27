@@ -8,7 +8,7 @@ import React from 'react'
 
 
 
-function Paymentfile() {
+function Paymentfile({payment}) {
     const  cardBox = {
        width:'80%'
       };
@@ -21,7 +21,7 @@ function Paymentfile() {
     <div>
           <div className="card-box ms-5 mt-5" >
             <div class="card" style={cardBox}>
-  <h5 class="card-header text-center"> <span className='numbar-span'>$50</span> $100</h5>
+  <h5 class="card-header text-center"> <span className='numbar-span'>{payment.lower}</span> {payment.highCost}</h5>
   <div class="card-body">
     <h5 class="card-title">Extra</h5>
     <p class="card-text">Please click the question Mark Icon to see the details of each extra</p>
@@ -49,6 +49,7 @@ function Paymentfile() {
   Estate (HOA)<br/>
 + R25,000.00 Extra
   </label>
+
 </div>
     </div>
     <div className='printing'>
@@ -56,7 +57,10 @@ function Paymentfile() {
     </div>
     <NavLink className="linktext "to="/payment">
     <button className='buy-btn p-3 mt-4  ms-5 rounded-2 ' height="30%">BUY</button>
+    
     </NavLink>
+    <a href={payment. planPDf} download>{payment.lower}</a>
+  
 
   </div>
 </div>      

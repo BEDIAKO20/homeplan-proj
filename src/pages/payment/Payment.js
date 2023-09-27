@@ -1,44 +1,45 @@
-import React,{useState}from "react";
+import React, { useState } from "react";
 import "../payment/payment.css";
-import PaystackPop from '@paystack/inline-js'; 
-import { useNavigate } from "react-router-dom";
+import PaystackPop from "@paystack/inline-js";
+
+import Modals from "../modals/Modals";
 
 function Payment() {
+  //   const [amount,setAmount  ]=useState("")
+  const [email, setEmail] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [showModal, setShowModal] = useState(false); // State to manage modal visibility
+  const amount = 1000 * 100;
 
-//   const [amount,setAmount  ]=useState("")
-const amount =1000*100
-  const [email, setEmail] = useState("")
-  const [firstname, setFirstname] = useState("")
-  const [lastname, setLastname] = useState("")
+  const Paywithpaystack = (e) => {
+    e.preventDefault();
 
+    const paystack = new PaystackPop();
 
-const navigate=useNavigate();
+    paystack.newTransaction({
+      key: "pk_test_b9c7772fd0ba7145f2ab4ddf492fbca56c73fc02",
+      amount: amount,
+      email,
+      firstname,
+      lastname,
+      callback: (response) => {
+        // Callback function after successful payment
+        console.log("Payment successful:", response);
 
-  const Paywithpaystack =(e)=>{
-	e.preventDefault()
+        // Set showModal to true to display the modal
+        setShowModal(true);
+      },
+      onClose: () => {
+        // Callback function after the Paystack dialog is closed
+        console.log("Payment closed");
 
-		const paystack = new PaystackPop()
-		
-		paystack.newTransaction({
-			key:"pk_test_b9c7772fd0ba7145f2ab4ddf492fbca56c73fc02",
-			amount:amount,
-			email,
-			firstname,
-			lastname,
-			callback: function (response) {
-				if (response.status === "success") {
-				  // Payment was successful
-				  console.log(response); // You can handle the response here
-		
-				  // Redirect to the success page
-				  navigate("/download"); // Use navigate to change the route
-				} else {
-				  // Payment was not successful
-				  window.alert("Payment not successful. Please try again."); // Display an alert
-				}
-			  },
-		})
-  	}
+        // You can navigate to a different page here if needed
+        // navigate("/path-to-redirect");
+      },
+    });
+  };
+
   return (
     <div>
       <div className="container-fluid">
@@ -142,10 +143,10 @@ const navigate=useNavigate();
                         name="holdername"
                         id="email-address"
                         placeholder="JohnSmith@gmail.com"
-						value={email}
-						onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
-					    <p>{amount}</p>
+                      <p>{amount}</p>
                       {/* <div class="row">
                         <div class="col-md-12">
                           <label class="pay">Amount</label>
@@ -171,8 +172,8 @@ const navigate=useNavigate();
                             name="name"
                             id="firstname"
                             placeholder="First Name"
-							value={firstname}
-							onChange={(e) => setFirstname(e.target.value)}
+                            value={firstname}
+                            onChange={(e) => setFirstname(e.target.value)}
                           />
                         </div>
                         <div class="col-4 col-md-6">
@@ -182,21 +183,20 @@ const navigate=useNavigate();
                             name="name"
                             id="last-name"
                             placeholder="Last Name"
-							value={lastname}
-							onChange={(e) => setLastname(e.target.value)}
+                            value={lastname}
+                            onChange={(e) => setLastname(e.target.value)}
                           />
                         </div>
                       </div>
 
                       <div class="row">
                         <div class="col-md-6">
-						{/* <PaystackButton {...componentProps}  class="btn btn-info placeicon" />   */}
+                          {/* <PaystackButton {...componentProps}  class="btn btn-info placeicon" />   */}
                           <input
                             type="submit"
                             value="MAKE A PAYMENT &nbsp; &#xf178;"
                             class="btn btn-info placeicon"
-						onClick={ Paywithpaystack}
-							
+                            onClick={Paywithpaystack}
                           />
                         </div>
                       </div>
@@ -208,6 +208,10 @@ const navigate=useNavigate();
           </div>
         </div>
       </div>
+
+  
+      {/* Pass showModal state and functions to control the modal */}
+      <Modals show={showModal} handleClose={() => setShowModal(false)} />
     </div>
   );
 }

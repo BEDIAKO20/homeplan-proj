@@ -6,6 +6,7 @@ import homeplanData from "../../assets/Data/homeplans";
 // import { useParams } from "react-router-dom";
 
 function Desription({desriptionhome}) {
+  console.log(desriptionhome)
 
   // const params =useParams();
   // const  singleplantIem = homeplanData.find((item) => item.id == params)

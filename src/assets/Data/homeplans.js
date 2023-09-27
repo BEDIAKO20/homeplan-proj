@@ -57,11 +57,13 @@ import homePlans4 from "../../assets/houseplan6.jpg";
 import homePlans5 from "../../assets/houseplan7.jpg";
 // import homeplanData from "./homeplans"
 
+import plan1PDF from "../pdf/house1.pdf"
 
  const homeplanData=[
     {
         id:1,
         imgUrl:  homeplan,
+        planPDf :plan1PDF,
         plantry:"5 BadRoom",
         image : [
           { id: 0, value: fontelevation1 },
@@ -115,11 +117,14 @@ import homePlans5 from "../../assets/houseplan7.jpg";
         instantDownload:"Yes",
         area:"346",
         level:"2",
-        garage:"22"
+        garage:"22",
+        lower:"$50",
+        highCost:"$100"
     },
       {
         id:2,
         imgUrl:  homeplan2,
+        planPDf :plan1PDF,
         plantry:"5 BadRoom",
         image : [
           { id: 0, value: fontelevation2 },
@@ -173,7 +178,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
         instantDownload:"Yes",
         area:"346",
         level:"2",
-        garage:"22"
+        garage:"22",
+        lower:"$100",
+        highCost:"$150"
     },
 
       {
@@ -232,7 +239,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
         instantDownload:"Yes",
         area:"346",
         level:"2",
-        garage:"22"
+        garage:"22",
+        lower:"$40",
+        highCost:"$80"
     },
   
      
@@ -293,7 +302,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
         instantDownload:"Yes",
         area:"346",
         level:"2",
-        garage:"22"
+        garage:"22",
+        lower:"$40",
+        highCost:"$20"
     },
     {
       id:5,
@@ -410,7 +421,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
         instantDownload:"Yes",
         area:"346",
         level:"2",
-        garage:"22"
+        garage:"22",
+        lower:"$50",
+        highCost:"$100"
     },
     {
       id:7,
@@ -475,7 +488,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
       instantDownload:"Yes",
       area:"346",
       level:"2",
-      garage:"22"
+      garage:"22",
+      lower:"$50",
+      highCost:"$100"
   },
   {
     id:8,
@@ -533,7 +548,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
     instantDownload:"Yes",
     area:"346",
     level:"2",
-    garage:"22"
+    garage:"22",
+    lower:"$50",
+    highCost:"$100"
 },
 {
   id:9,
@@ -598,7 +615,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
   instantDownload:"Yes",
   area:"346",
   level:"2",
-  garage:"22"
+  garage:"22",
+  lower:"$50",
+  highCost:"$100"
 },
 {
   id:9,
@@ -612,6 +631,7 @@ import homePlans5 from "../../assets/houseplan7.jpg";
     { id: 5, value: homePlans3 },
     { id: 6, value: homePlans5 },
   ],
+  
   plantry:"5 BadRoom",
   aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
   homePlanImage1:fontelevation9,
@@ -663,7 +683,9 @@ import homePlans5 from "../../assets/houseplan7.jpg";
   instantDownload:"Yes",
   area:"346",
   level:"2",
-  garage:"22"
+  garage:"22",
+  lower:"$50",
+  highCost:"$100"
 },
 
 
