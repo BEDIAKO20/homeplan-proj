@@ -15,6 +15,9 @@ function Paymentfile({payment}) {
       const hrStyle = {
         border: '1px solid #2f327d',
       };
+      const handlclick=(e)=>{
+        localStorage.setItem("choose" , JSON.stringify(payment))
+      }
   return (
 
     
@@ -56,10 +59,10 @@ function Paymentfile({payment}) {
 
     </div>
     <NavLink className="linktext "to="/payment">
-    <button className='buy-btn p-3 mt-4  ms-5 rounded-2 ' height="30%">BUY</button>
+    <button className='buy-btn p-3 mt-4  ms-5 rounded-2 ' onClick={handlclick} height="30%">BUY</button>
     
     </NavLink>
-    <a href={payment. planPDf} download>{payment.lower}</a>
+    {/* <a href={payment. planPDf} download>{payment.lower}</a> */}
   
 
   </div>

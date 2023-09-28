@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect,useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "../modals/Modals.css";
+import homeplans from   "../../assets/Data/homeplans"
+import  homePdf from  "../../assets/pdf/house1.pdf"
 
-function Modals({ show, handleClose }) {
+function Modals({ show, handleClose,pdf }) {
+
+
+
   const modalStyle = {
     position: "absolute",
     top: 0,
@@ -17,7 +22,8 @@ function Modals({ show, handleClose }) {
           <Modal.Title> Click On Download</Modal.Title>
         </Modal.Header>
         <Modal.Body className="modalbody">
-          <button class="cssbuttons-io-button">
+          <a href={pdf}  download  className="cssbuttons-io-button">
+         
             <svg
               height="24"
               width="24"
@@ -31,7 +37,7 @@ function Modals({ show, handleClose }) {
               ></path>
             </svg>
             <span>Download</span>
-          </button>
+          </a>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>

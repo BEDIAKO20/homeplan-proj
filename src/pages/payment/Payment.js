@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../payment/payment.css";
 import PaystackPop from "@paystack/inline-js";
+import pdf from "../../assets/pdf/house1.pdf"
 
 import Modals from "../modals/Modals";
 
@@ -11,6 +12,11 @@ function Payment() {
   const [lastname, setLastname] = useState("");
   const [showModal, setShowModal] = useState(false); // State to manage modal visibility
   const amount = 1000 * 100;
+
+    let palnns = localStorage.getItem("choose");
+    let paln = JSON.parse(palnns)
+    let p = paln.planPDf
+
 
   const Paywithpaystack = (e) => {
     e.preventDefault();
@@ -211,7 +217,7 @@ function Payment() {
 
   
       {/* Pass showModal state and functions to control the modal */}
-      <Modals show={showModal} handleClose={() => setShowModal(false)} />
+      <Modals show={showModal} handleClose={() => setShowModal(false)} pdf={pdf}/>
     </div>
   );
 }

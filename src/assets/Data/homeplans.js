@@ -63,7 +63,7 @@ import plan1PDF from "../pdf/house1.pdf"
     {
         id:1,
         imgUrl:  homeplan,
-        planPDf :plan1PDF,
+        planPDf :"/assets/pdf/house1.pdf",
         plantry:"5 BadRoom",
         image : [
           { id: 0, value: fontelevation1 },
@@ -124,7 +124,7 @@ import plan1PDF from "../pdf/house1.pdf"
       {
         id:2,
         imgUrl:  homeplan2,
-        planPDf :plan1PDF,
+        planPDf :"./assets/pdf/house2.pdf",
         plantry:"5 BadRoom",
         image : [
           { id: 0, value: fontelevation2 },
