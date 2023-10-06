@@ -29,7 +29,8 @@
     line-height: 20%;
 }
 .navbar {
-    background: #263238 !important;
+    background: #004225 !important;
+    /* #426513 */
 }
 .icon{
     color: rgba(238, 238, 238, 0.918) !important;
