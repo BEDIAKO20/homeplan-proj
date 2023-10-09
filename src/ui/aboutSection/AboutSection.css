@@ -1,18 +1,19 @@
 .about__section-item {
     column-gap: 3rem;
   }
-  /* h4{
-    color: #f9a826 !important;
-  }
+
   .section__subtitle{
-    color: #f9a826;
-    font-size: 1.1rem;
-  } */
+    color: hsl(37, 95%, 56%);
+    font-size: 1.3rem;
+  }
   .about__section-item p i {
     color: #f9a826;
     font-size: 1.1rem;
   }
   
+  .section__title{
+    color: #374259;
+  }
   @media only screen and (max-width: 992px) {
     .about__section-content h2 {
       font-size: 1.5rem;
@@ -27,7 +28,12 @@
   
     .section__description i {
       font-size: 0.8rem !important;
+  
     }
+  }
+  
+  .section__description {
+    color: gray;
   }
   
   @media only screen and (max-width: 768px) {
