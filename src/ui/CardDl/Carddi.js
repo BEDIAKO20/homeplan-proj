@@ -20,14 +20,14 @@ function Carddi() {
 
   return (
     <div>
-      <div className="container">
+      <div className="container mt-5">
         <div className="row">
           {loading ? (
             <Loaders />
           ) : (
             homeplanData.map((item) => (
               <div key={item.id} className="col-md-3 col-12">
-                <div className="card-container">
+                <div className="card-container mt-5">
                   <div className="card-wrapper">
                     <div className="card-top">
                       <img className="image" src={item.imgUrl} alt="plantry" />

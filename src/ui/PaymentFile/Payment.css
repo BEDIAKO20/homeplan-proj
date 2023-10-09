@@ -1,5 +1,5 @@
 .card-header{
-    background-color:#15133C !important;
+    background-color:#004225 !important;
     color: #f1f1f1 !important;
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -75,7 +75,7 @@
 
   .buy-btn{
     width: 40% !important;
-    background-color: #EC994B;
+    background-color: #FFCD4B;
     color: aliceblue;
     border: none;
     font-weight: 20px !;
