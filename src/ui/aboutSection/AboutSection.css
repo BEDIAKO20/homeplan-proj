@@ -1,7 +1,9 @@
 .about__section-item {
     column-gap: 3rem;
   }
-
+.read-link{
+  color: blue;
+}
   .section__subtitle{
     color: hsl(37, 95%, 56%);
     font-size: 1.3rem;
@@ -31,7 +33,9 @@
   
     }
   }
-  
+  .description-check{
+    color: #f9a826 ;
+  }
   .section__description {
     color: gray;
   }

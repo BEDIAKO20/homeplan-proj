@@ -5,6 +5,7 @@ import  CardSearch from '../../ui/CardSearch/CardSearch'
 // import homeplanData from "../../assets/Data/homeplans";
 import { Container, Row, Col } from "react-bootstrap";
 import AboutSection from "../../ui/aboutSection/AboutSection";
+import ServicesList from "../../ui/Sevices/Sevices";
 
 
 
@@ -34,6 +35,20 @@ function Home() {
 
 <AboutSection/>
 
+{/* ========== services section ============ */}
+<section>
+        <Container>
+          <Row>
+            <Col lg="12" className="my-5 text-center">
+              <h6 className="section__subtitle">See our</h6>
+              <h2 className="section__title">Popular Services</h2>
+            </Col>
+            <ServicesList/>
+            {/* <ServicesList /> */}
+          </Row>
+        </Container>
+      </section>
+      {/* =========== car offer section ============= */}
 
 
 

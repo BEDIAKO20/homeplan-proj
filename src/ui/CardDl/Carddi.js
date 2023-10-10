@@ -20,7 +20,7 @@ function Carddi() {
 
   return (
     <div>
-      <div className="container mt-5">
+      <div className="container py-5">
         <div className="row">
           {loading ? (
             <Loaders />
