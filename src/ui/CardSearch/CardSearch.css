@@ -75,10 +75,11 @@
  }
  
  .find__car-btn {
-   background: #000d6b !important;
+   background: #E9B824 !important;
    color: #fff !important;
    padding: 8px 15px;
    width: 100%;
+   margin-top: 3%;
    border: none;
    outline: none;
  }

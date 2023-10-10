@@ -1,5 +1,5 @@
 .footer {
-    background:#004225;
+    background:#005B41;
     padding-top: 50px;
     padding-bottom: 15px;
   }
@@ -10,7 +10,7 @@
   }
   
   .footer__logo span {
-    color: #fff;
+    color: #E9B824;
     font-weight: 500;
   }
   
@@ -37,7 +37,7 @@
   }
   
   .footer__link-title {
-    color: #fff;
+    color: #E9B824;
   }
   
   .office__info {
@@ -52,7 +52,7 @@
     padding: 8px 12px;
     border: 1px solid #7c8a972f;
     border-radius: 50px;
-    background: #FFCD4B;
+    background: whitesmoke;
   }
   
   .newsletter input {

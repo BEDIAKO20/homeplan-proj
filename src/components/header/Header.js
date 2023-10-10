@@ -19,17 +19,17 @@ export default function Header() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2   mb-lg-0">
         <li class="nav-item me-3">
-          <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          <a class="nav-link active " aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item me-3">
-          <a class="nav-link  text-white" href="#"><ImEarth className='lang-icon  text-white'/> Language</a>
+          <a class="nav-link  " href="#"><ImEarth className='lang-icon '/> Language</a>
         </li>
         <li class="nav-item me-3 ">
-          <a class="nav-link  text-white" href="#">Link</a>
+          <a class="nav-link " href="#">Link</a>
         </li>
        
         <li class="nav-item dropdown me-3">
-          <a class="nav-link dropdown-toggle  text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             List your plans
           </a>
           <ul class="dropdown-menu">

@@ -13,7 +13,7 @@
     font-weight: 600; 
 }
 .lang-icon{
-    color: rgba(0, 0, 0, 0.50);
+    color: #E9B824 !important;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -29,11 +29,14 @@
     line-height: 20%;
 }
 .navbar {
-    background: #004225 !important;
+    background: #005B41 !important;
     /* #426513 */
 }
+.nav-link{
+    color: #E9B824 !important;
+}
 .icon{
-    color: rgba(238, 238, 238, 0.918) !important;
+    color: #E9B824!important;
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
     font-style: normal;
