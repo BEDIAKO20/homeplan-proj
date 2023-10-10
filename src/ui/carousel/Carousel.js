@@ -22,7 +22,7 @@ function Carousel() {
     <div className="carousel-inner">
       <div className="carousel-item welcome-carousel-image1 active">
         <div className="carousel-caption">
-          <h1>Welcome to Fifarm</h1>
+          <h1></h1>
           <p>Home to the best farming on the internet.</p>
         </div>
       </div>
