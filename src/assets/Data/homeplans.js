@@ -64,7 +64,7 @@ import plan1PDF from "../pdf/house1.pdf"
         id:1,
         imgUrl:  homeplan,
         planPDf :"/assets/pdf/house1.pdf",
-        plantry:"5 BadRoom",
+        plantry:"4 BedRoom",
         image : [
           { id: 0, value: fontelevation1 },
           { id: 1, value: Dfloorplan1 },
@@ -74,7 +74,7 @@ import plan1PDF from "../pdf/house1.pdf"
           { id: 5, value: homePlans3 },
           { id: 6, value: homePlans5 },
         ],
-        aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+        aboutplan:" Download a  4 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
         description:
         "   The 4 Bedroom House Plan BLA 109.1S is a pre-designed, modern house plan offering a total living space of 290 m². It features a spacious master bedroom of 24.67 m², three additional bedrooms, two bathrooms, a kitchen with a separate scullery, a dining area, adouble garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan has a side to side measurement of 19.1m and a front to back measurement of 19.1m, ensuring a well-proportioned and balanced layout.",
         intoducingDescription:" Introducing the 4 Bedroom House Plan BLA 109.1S, a perfect blend of elegance and functionality. This pre-designed house plan offers a spacious and comfortable living space that caters to the needs of a  modern family. With its well-thought-out layout and design, this house plan is a perfect choice for those who value comfort and  style.",
@@ -125,7 +125,7 @@ import plan1PDF from "../pdf/house1.pdf"
         id:2,
         imgUrl:  homeplan2,
         planPDf :"./assets/pdf/house2.pdf",
-        plantry:"5 BadRoom",
+        plantry:"3 BedRoom",
         image : [
           { id: 0, value: fontelevation2 },
           { id: 1, value: Dfloorplan2 },
@@ -135,7 +135,7 @@ import plan1PDF from "../pdf/house1.pdf"
           { id: 5, value: homePlans3 },
           { id: 6, value: homePlans5 },
         ],
-        aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+        aboutplan:"Download a  3 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
         description:
         "The 4 Bedroom House Plan BLA 109.1S is a pre-designed, modern house plan offering a total living space of 290 m². It features a spacious master bedroom of 24.67 m², three additional bedrooms, two bathrooms, a kitchen with a separate scullery, a dining area, adouble garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan has a side to side measurement of 19.1m and a front to back measurement of 19.1m, ensuring a well-proportioned and balanced layout.",
         intoducingDescription:" Introducing the 4 Bedroom House Plan BLA 109.1S, a perfect blend of elegance and functionality. This pre-designed house plan offers a spacious and comfortable living space that caters to the needs of a  modern family. With its well-thought-out layout and design, this house plan is a perfect choice for those who value comfort and  style.",
@@ -186,7 +186,7 @@ import plan1PDF from "../pdf/house1.pdf"
       {
         id:3,
         imgUrl:  homeplan3,
-        plantry:"5 BadRoom", 
+        plantry:"6 BedRoom", 
         image : [
           { id: 0, value: fontelevation3 },
           { id: 1, value: Dfloorplan3 },
@@ -196,7 +196,7 @@ import plan1PDF from "../pdf/house1.pdf"
           { id: 5, value: homePlans3 },
           { id: 6, value: homePlans5 },
         ],
-        aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+        aboutplan:"Download a 6 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
         description:
         "   The 4 Bedroom House Plan BLA 109.1S is a pre-designed, modern house plan offering a total living space of 290 m². It features a spacious master bedroom of 24.67 m², three additional bedrooms, two bathrooms, a kitchen with a separate scullery, a dining area, adouble garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan has a side to side measurement of 19.1m and a front to back measurement of 19.1m, ensuring a well-proportioned and balanced layout.",
         intoducingDescription:" Introducing the 4 Bedroom House Plan BLA 109.1S, a perfect blend of elegance and functionality. This pre-designed house plan offers a spacious and comfortable living space that caters to the needs of a  modern family. With its well-thought-out layout and design, this house plan is a perfect choice for those who value comfort and  style.",
@@ -248,7 +248,7 @@ import plan1PDF from "../pdf/house1.pdf"
       {
         id:4,
         imgUrl:  homeplan5,
-        plantry:"5 BadRoom",
+        plantry:"3 BedRoom",
         image : [
           { id: 0, value: fontelevation4 },
           { id: 1, value: Dfloorplan4 },
@@ -258,7 +258,7 @@ import plan1PDF from "../pdf/house1.pdf"
           { id: 5, value: homePlans3 },
           { id: 6, value: homePlans5 },
         ],
-        aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+        aboutplan:"Download a  5 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
        
         description:
         "   The 4 Bedroom House Plan BLA 109.1S is a pre-designed, modern house plan offering a total living space of 290 m². It features a spacious master bedroom of 24.67 m², three additional bedrooms, two bathrooms, a kitchen with a separate scullery, a dining area, adouble garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan has a side to side measurement of 19.1m and a front to back measurement of 19.1m, ensuring a well-proportioned and balanced layout.",
@@ -318,8 +318,8 @@ import plan1PDF from "../pdf/house1.pdf"
         { id: 5, value: homePlans3 },
         { id: 6, value: homePlans5 },
       ],
-      plantry:"5 BadRoom",
-      aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+      plantry:"8 BedRoom",
+      aboutplan:"Download a  8 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
                         description:
                         "   The 4 Bedroom House Plan BLA 109.1S is a pre-designed, modern house plan offering a total living space of 290 m². It features a spacious master bedroom of 24.67 m², three additional bedrooms, two bathrooms, a kitchen with a separate scullery, a dining area, adouble garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan has a side to side measurement of 19.1m and a front to back measurement of 19.1m, ensuring a well-proportioned and balanced layout.",
                         intoducingDescription:" Introducing the 4 Bedroom House Plan BLA 109.1S, a perfect blend of elegance and functionality. This pre-designed house plan offers a spacious and comfortable living space that caters to the needs of a  modern family. With its well-thought-out layout and design, this house plan is a perfect choice for those who value comfort and  style.",
@@ -377,8 +377,8 @@ import plan1PDF from "../pdf/house1.pdf"
           { id: 5, value: homePlans3 },
           { id: 6, value: homePlans5 },
         ],
-        plantry:"5 BadRoom",
-        aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+        plantry:"2 BedRoom",
+        aboutplan:"Download a  2 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
         description:
         "   The 4 Bedroom House Plan BLA 109.1S is a pre-designed, modern house plan offering a total living space of 290 m². It features a spacious master bedroom of 24.67 m², three additional bedrooms, two bathrooms, a kitchen with a separate scullery, a dining area, adouble garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan has a side to side measurement of 19.1m and a front to back measurement of 19.1m, ensuring a well-proportioned and balanced layout.",
         intoducingDescription:" Introducing the 4 Bedroom House Plan BLA 109.1S, a perfect blend of elegance and functionality. This pre-designed house plan offers a spacious and comfortable living space that caters to the needs of a  modern family. With its well-thought-out layout and design, this house plan is a perfect choice for those who value comfort and  style.",
@@ -428,7 +428,7 @@ import plan1PDF from "../pdf/house1.pdf"
     {
       id:7,
       imgUrl:  homeplan10,
-      plantry:"5 BadRoom",
+      plantry:"5 BedRoom",
       image : [
         { id: 0, value: fontelevation7 },
         { id: 1, value: Dfloorplan7 },
@@ -438,7 +438,7 @@ import plan1PDF from "../pdf/house1.pdf"
         { id: 5, value: homePlans3 },
         { id: 6, value: homePlans5 },
       ],
-      aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+      aboutplan:"Download a  5 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
       homePlanImage1:fontelevation7,
       homePlanImage2:Dfloorplan7,
       homePlanImage3:floorplan7,
@@ -504,7 +504,7 @@ import plan1PDF from "../pdf/house1.pdf"
       { id: 5, value: homePlans3 },
       { id: 6, value: homePlans5 },
     ],
-    plantry:"5 BadRoom",
+    plantry:"4 BedRoom",
     aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
     description:
     "   The 4 Bedroom House Plan BLA 109.1S is a pre-designed, modern house plan offering a total living space of 290 m². It features a spacious master bedroom of 24.67 m², three additional bedrooms, two bathrooms, a kitchen with a separate scullery, a dining area, adouble garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan has a side to side measurement of 19.1m and a front to back measurement of 19.1m, ensuring a well-proportioned and balanced layout.",
@@ -564,7 +564,7 @@ import plan1PDF from "../pdf/house1.pdf"
     { id: 5, value: homePlans3 },
     { id: 6, value: homePlans5 },
   ],
-  plantry:"5 BadRoom",
+  plantry:"6 BedRoom",
   aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
   homePlanImage1:fontelevation9,
   homePlanImage2:Dfloorplan9,
@@ -633,7 +633,7 @@ import plan1PDF from "../pdf/house1.pdf"
   ],
   
   plantry:"5 BadRoom",
-  aboutplan:"Join our membership program to download music for free, listen offline and skip songs",
+  aboutplan:"Download a  5 Bedroom House Plan BLA 109.1S boasts a master bedroom with an expansive area of 24.67 m², three additional bedrooms, a master  bathroom, a secondary bathroom, a kitchen with a separate scullery,  a dining area, a double garage, a porch, a lounge area, an entry hall, a prayer room, and a pantry. The house plan is designed to  maximize space and provide a comfortable living environment",
   homePlanImage1:fontelevation9,
   homePlanImage2:Dfloorplan9,
   homePlanImage3:floorplan9,
