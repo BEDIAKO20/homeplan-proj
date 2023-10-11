@@ -1,49 +1,56 @@
 import React from "react";
-
+import Cardpic1 from "../../assets/Cardpic1.jpg";
+import Cardpic2 from "../../assets/Cardpic2.jpg";
+import Cardpic3 from "../../assets/Cardpic3.jpg";
 import { Form, FormGroup } from "react-bootstrap";
-import  "../CardSearch/CardSearch.css"
+import "../CardSearch/CardSearch.css";
 const FindForm = () => {
   return (
-    <Form className="form">
-      <div className=" d-flex align-items-center justify-content-between flex-wrap">
-      <Form.Select aria-label="Default select example" className="form__group">
-      <option>Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </Form.Select>
-
-    <Form.Select aria-label="Default select example" className="form__group mt-3">
-      <option>Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </Form.Select>
-
-        <FormGroup className="form__group">
-          <input type="date" placeholder="Journey date" required />
-        </FormGroup>
-
-        <FormGroup className="form__group">
-          <input
-            className="journey__time"
-            type="time"
-            placeholder="Journey time"
-            required
-          />
-        </FormGroup>
-        <FormGroup className="select__group">
-          <select>
-            <option value="ac">AC Car</option>
-            <option value="non-ac">Non AC Car</option>
-          </select>
-        </FormGroup>
-
-        <FormGroup className="form__group">
-          <button className="btn find__car-btn">Find Plan</button>
-        </FormGroup>
+    <div>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div class="card  image-card">
+              <div class="card-body">
+                <img src={Cardpic1} class="img-thumbnail" alt="..." />
+                <div className="mt-5">
+                  <p className="card-text">
+                    Welcome to your tranquil haven. Each corner whispers warmth,
+                    inviting you to unwind in this comforting space.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img src={Cardpic2} class="img-thumbnail" alt="..." />
+                <div className="mt-5">
+                  <p className="card-text">
+                    Step into serenity. This home is a sanctuary of peace, where
+                    every room tells a story of comfort and coziness.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <img src={Cardpic3} class="img-thumbnail" alt="..." />
+                <div className="mt-5">
+                  <p className="card-text">
+                    Discover comfort in every detail. From soft lighting to
+                    soothing sounds, this inviting home is your refuge of calm.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </Form>
+    </div>
   );
 };
 

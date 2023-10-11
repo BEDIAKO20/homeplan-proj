@@ -18,7 +18,10 @@ border-top-right-radius: 20px !important;
     top: 10rem;
     z-index: 10;
   }
-  
+  .btn{
+    background: #E9B824 !important;
+    color: aliceblue !important;
+  }
   /* Declare heights because of positioning of img element */
   .carousel-item {
     height: 36rem;

@@ -16,8 +16,8 @@ const AboutSection = ({ text, lines = 3 }) => {
     <section className="about__section">
       <Container>
         <Row>
-          <Col lg="6" md="6">
-            <div className="about__section-content mt-5">
+          <Col lg="6" >
+            <div className="about__section-content ">
               <h4 className="section__subtitle">About Us</h4>
               <h2 className="section__title">Welcome to Manaspacegroup</h2>
               <TruncateMarkup

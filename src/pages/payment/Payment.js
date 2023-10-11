@@ -58,9 +58,9 @@ function Payment() {
                     <h3 id="heading1">Payment Summary</h3>
                     <div className="row">
                       <div className="col-lg-7 col-8 mt-4 line pl-4">
-                        <h2 className="bill-head">Electronics</h2>
+                        <h2 className="bill-head">3D Plan</h2>
                         <small className="bill-date">
-                          2017 Feb 10 at 10:30 PM
+                          {/* 2017 Feb 10 at 10:30 PM */}
                         </small>
                       </div>
                       <div className="col-lg-5 col-4 mt-4">
@@ -69,9 +69,9 @@ function Payment() {
                     </div>
                     <div className="row">
                       <div className="col-lg-7 col-8 mt-4 line pl-4">
-                        <h2 className="bill-head">Food</h2>
+                        <h2 className="bill-head">Floor Plan</h2>
                         <small className="bill-date">
-                          2017 Feb 25 at 11:30 PM
+                       
                         </small>
                       </div>
                       <div className="col-lg-5 col-4 mt-4">
@@ -80,13 +80,13 @@ function Payment() {
                     </div>
                     <div className="row">
                       <div className="col-lg-7 col-8 mt-4 line pl-4">
-                        <h2 className="bill-head">Grocery</h2>
+                        <h2 className="bill-head">Fontend Elevation</h2>
                         <small className="bill-date">
-                          2017 Mar 17 at 10:45 PM
+                         
                         </small>
                         <br />
                         <small className="bill-date">
-                          2017 Mar 18 at 11:45 PM
+                          
                         </small>
                       </div>
                       <div className="col-lg-5 col-4 mt-4">
@@ -95,9 +95,9 @@ function Payment() {
                     </div>
                     <div className="row">
                       <div className="col-lg-7 col-8 mt-4 line pl-4">
-                        <h2 className="bill-head">Accessories</h2>
+                        <h2 className="bill-head">Backend Elevation</h2>
                         <small className="bill-date">
-                          2017 Apr 13 at 05:30 PM
+                          
                         </small>
                       </div>
                       <div className="col-lg-5 col-4 mt-4">
@@ -110,7 +110,7 @@ function Payment() {
                           Total Price
                         </p>
                         <h2 className="bill-head" id="total">
-                          $ 523.65
+                        ₵1.000
                         </h2>
                         <small className="bill-date" id="total-label">
                           Price includes all taxes
@@ -152,7 +152,7 @@ function Payment() {
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                       />
-                      <p>{amount}</p>
+                   
                       {/* <div class="row">
                         <div class="col-md-12">
                           <label class="pay">Amount</label>

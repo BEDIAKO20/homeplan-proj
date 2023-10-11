@@ -4,6 +4,7 @@ import {SiHomebridge} from 'react-icons/si'
 import {ImEarth} from 'react-icons/im'
 import  {FaShoppingCart} from 'react-icons/fa'
 import {FaRegBell} from 'react-icons/fa'
+import logo  from  "../../assets/logo.png"
 
 
 
@@ -12,7 +13,9 @@ export default function Header() {
     <div>
         <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand g-3" href="#"><SiHomebridge className='brand-icon'/> Manaspce Constructions</a>
+    <a class="navbar-brand g-3 ms-5" href="#">
+    <img src={logo} alt="Logo" width="40" height="24" class="d-inline-block align-text-top"/>
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

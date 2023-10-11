@@ -22,22 +22,22 @@ function Carousel() {
     <div className="carousel-inner">
       <div className="carousel-item welcome-carousel-image1 active">
         <div className="carousel-caption">
-          <h1></h1>
-          <p>Home to the best farming on the internet.</p>
+          <h1>Welcome to Manaspace group</h1>
+          <p>High-quality images and visual representations of the building plan.</p>
         </div>
       </div>
       <div className="carousel-item welcome-carousel-image2">
         <div className="carousel-caption text-start">
-          <h1>Discover our farm subscription</h1>
-          <p>Farm with us and earn some money every week.</p>
-          <p><a className="btn btn-lg btn-primary" href="piesubscription.html" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Sign up today</a></p>
+          <h1>Download Options, <br/> Including Different File Format</h1>
+          <p>Download Your Building Plans.</p>
+          <p><a className="btn btn-lg " href="piesubscription.html" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Sign up today</a></p>
         </div>
       </div>
       <div className="carousel-item welcome-carousel-image3">
-        <div className="carousel-caption text-end">
-          <h1>Browse online farming</h1>
-          <p>Every season has its farming. Enjoy our paid check now.</p>
-          <button type="button" className="btn btn-primary" id="liveToastBtn">SUBSCRIBE</button>
+        <div className="carousel-caption ">
+          <h1> Provide Useful Tips For Users Interested In Construction And Architecture</h1>
+          <p>Download And Enjoy  Now.</p>
+          <button type="button" className="btn " id="liveToastBtn">SUBSCRIBE</button>
           {/* ... Toast component */}
         </div>
       </div>

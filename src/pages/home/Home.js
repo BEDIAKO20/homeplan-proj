@@ -15,7 +15,8 @@ function Home() {
       <section className="p-0  carouel-section">
       <Carouel />
 
-      <div className="hero__form">
+      <CardSearch/>
+      {/* <div className="">
           <Container>
             <Row className="form__row">
               <Col lg="4" md="4">
@@ -25,11 +26,11 @@ function Home() {
               </Col>
 
               <Col lg="8" md="8" sm="12">
-                <CardSearch/>
+               
               </Col>
             </Row>
           </Container>
-        </div>
+        </div> */}
       </section>
     
 
