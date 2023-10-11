@@ -28,7 +28,7 @@ const FindForm = () => {
                 <img src={Cardpic2} class="img-thumbnail" alt="..." />
                 <div className="mt-5">
                   <p className="card-text">
-                    Step into serenity. This home is a sanctuary of peace, where
+                    Step into serenit. This home is a sanctuary of peace, where
                     every room tells a story of comfort and coziness.
                   </p>
                 </div>
